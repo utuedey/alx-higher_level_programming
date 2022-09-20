@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+def islower(c):
+        """ A function that check for lowercase alphabets
+                 Args:
+                 c (string) : character to check
+
+                 Return:
+                 Bool: True if check pass or False if check fails
+
+       """
+    for char in range(97, 123):
+        if c in chr(char):
+             return True
+    return False
