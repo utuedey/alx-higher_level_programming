@@ -3,10 +3,10 @@ if __name__ == "__main__":
     import sys
     from calculator_1 import add, sub, mul, div
     num_of_args = len(sys.argv)
-    if num_of_args <= 3:
+    if num_of_args != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
-    elif num_of_arg > 3:
+    else:
         a = int(sys.argv[1])
         b = int(sys.argv[3])
         operator = sys.argv[2]
