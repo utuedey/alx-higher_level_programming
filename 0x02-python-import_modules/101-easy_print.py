@@ -1,2 +1,4 @@
 #!/usr/bin/python3
-import real_print
+import os
+os.write(1, "#pythoniscool\n")
+
