@@ -45,7 +45,11 @@ class Node:
 
 
 class SingleLinkedList:
-    """Represent a single linked list."""
+    """Represent a single linked list.
+    Private instance attribute: head.
+    Simple instantiation.
+    Public instance method: def sorted_insert(self, value).
+    """
     def __init__(self):
         """Initialize the data"""
         self.head = None
