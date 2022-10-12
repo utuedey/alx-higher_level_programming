@@ -44,6 +44,11 @@ class Node:
         self.__next_node = value
 
 
+"""
+A python class representing singly linked list
+"""
+
+
 class SingleLinkedList:
     """Represent a single linked list.
     Private instance attribute: head.
