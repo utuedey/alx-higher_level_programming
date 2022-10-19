@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+touch 0-add_integer.txt
+touch 2-matrix_divided.txt
+touch 3-say_my_name.txt
+touch 4-print_square.txt
+touch 5-text_indentation.txt
+touch 100-matrix_mul.txt
+touch 101-lazy_matrix_mul.txt
