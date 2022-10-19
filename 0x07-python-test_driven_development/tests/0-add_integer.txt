@@ -8,10 +8,10 @@ First import ``add_integer`` from the ``0-add_integer`` module:
 
 from 0-add_integer import add_integer
 
-    >>> add_integer(2, 4)
-    6
+    >>> add_integer(1, 2)
+    3
     
-    >>> add_integer(4.0, 6)
+    >>> add_integer(1, 9.3)
     10
     
     >>> add_integer(4, 6.0)    
