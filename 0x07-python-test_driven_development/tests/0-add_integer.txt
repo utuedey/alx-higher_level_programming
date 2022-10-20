@@ -27,6 +27,11 @@ First import ``add_integer`` from the ``0-add_integer`` module:
     Traceback (most recent call last):
     TypeError: b must be an integer
 
+    >>> add_integer(None)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: a must be an integer
+
     >>> add_integer()
     Traceback (most recent call last):
     	      ...

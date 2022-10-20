@@ -1,7 +1,6 @@
-#!/usr/bin/python
-"""
-Module 100-matrix_mul.py
-multiplies two matrixes
+#!/usr/bin/python3
+"""Module 100-matrix_mul
+Multiplies two matrices and returns the result.
 """
 
 
@@ -23,7 +22,6 @@ def matrix_mul(m_a, m_b):
 
     if m_a == [] or m_a == [[]]:
         raise ValueError("m_a can't be empty")
-
     if m_b == [] or m_b == [[]]:
         raise ValueError("m_b can't be empty")
 
@@ -31,32 +29,27 @@ def matrix_mul(m_a, m_b):
         for x in row:
             if type(x) is not int and type(x) is not float:
                 raise TypeError("m_a should contain only integers or floats")
-            
+
     for row in m_b:
         for x in row:
             if type(x) is not int and type(x) is not float:
                 raise TypeError("m_b should contain only integers or floats")
-    row_len = []
-    
-    for row in m_a:
-        
-        row_len.append(len(row))
-        
-    if not all(elem == row_len[0] for elem in row_len):
-        
-            raise TypeError("each row of m_a must should be of the same size")
 
+    row_len = []
+    for row in m_a:
+        row_len.append(len(row))
+    if not all(elem == row_len[0] for elem in row_len):
+        raise TypeError("each row of m_a must should be of the same size")
     row_len = []
     for row in m_b:
         row_len.append(len(row))
-
     if not all(elem == row_len[0] for elem in row_len):
-            raise TypeError("each row of m_b must should be of the same size")
+        raise TypeError("each row of m_b must should be of the same size")
+
     a_col = 0
     for col in m_a[0]:
         a_col += 1
     b_row = 0
-
     for row in m_b:
         b_row += 1
 
@@ -68,5 +61,4 @@ def matrix_mul(m_a, m_b):
         for j in range(len(m_b[0])):
             for k in range(len(m_b)):
                 result[i][j] += m_a[i][k] * m_b[k][j]
-
     return result
