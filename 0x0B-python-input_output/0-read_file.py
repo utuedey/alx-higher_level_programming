@@ -10,6 +10,6 @@ def read_file(filename=""):
     Return:
     file contents
     """
-    with open(filename, 'r', encoding="utf-8") as f_obj:
+    with open(filename, encoding="utf-8") as f_obj:
         file_content = f_obj.read()
-        print(file_content)
+        print(file_content, end="")
